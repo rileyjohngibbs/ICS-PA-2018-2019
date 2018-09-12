@@ -4,7 +4,7 @@ Files for the Intro to Computer Science course, Period A, for the 2018-2019 scho
 
 ## First Python Assignment
 
-Download `first_python.zip` and decompress the file. You should be able to do this by double-clicking the file in your finder. If you're feeling fancy, open a shell, change directory into the `.zip` file's directory, and run this command:
+Download `first_python.zip` (click it in the file browser above, and then click "download" on the next page) and decompress the file. You should be able to decompress it by double-clicking the file in your finder. If you're feeling fancy, open a shell, change directory into the `.zip` file's directory, and run this command:
 
 ```
 $ unzip first_python.zip
