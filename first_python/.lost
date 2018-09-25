@@ -1,0 +1,73 @@
+Oh, here are the instructions. Phew!
+
+
+Some Setup Before the Fun Stuff
+-------------------------------
+
+We'll need to set up a couple things first, like telling your computer that you want to run Python 3 instead of Python 2. We can do this part with the .bash_profile file in your home folder.
+
+First, open a shell and go to your home directory.
+Check if there's a file called .bash_profile in that directory. If there isn't, run this command:
+
+  $ touch .bash_profile
+
+This will create an empty file called .bash_profile in that directory.
+Now open that file in Sublime Text and add these three lines to the bottom of the file:
+
+  PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+  export PATH
+  alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+Save that file and close it, then run this command:
+
+  $ source .bash_profile
+
+Now try running this command to open .bash_profile again:
+
+  $ subl .bash_profile
+
+Oh wow. That's pretty exciting, right?
+
+Now create a new file called "what_happened.txt", and in it, answer two questions:
+1. How did you suddenly gain this new superpower to open things with Sublime Text so easily?
+2. How could you allow yourself to open files in Sublime Text with the command "$ superpower filename.txt"?
+
+
+Some Actual Programming
+-----------------------
+
+Okay, so first I need you to make a new file called "my_first_script.py". In it, write a script that does the following:
+1. Introduces itself with a message saying who wrote the script (that's you).
+2. Asks the user for their name.
+3. Greets the user in some kind of friendly way.
+4. Asks the user for their height in imperial units.
+5. Converts their height to centimeters.
+
+Test this program by running it. There's more than one way to run a Python script, but not all of them may do what you want!
+
+
+Submission
+----------
+
+Put what_happened.txt and my_first_script.py in a new directory called "2018-09-14_First_Python". Compress this file with the following command:
+
+  $ zip (firstname_lastname) 2018-09-14_First_Python/*
+
+Obviously, replace "firstname_lastname" with your first name and last name, e.g. "Clark_Kent".
+
+This should create a file called firstname_lastname.zip that you should submit online.
+
+
+Evaluation
+----------
+
+If you complete all of the instructions above, and submit your zipped file, you'll be considered proficient in the basics of writing your own Python scripts.
+
+If you want to achieve mastery, complete one of the following:
+
+1. Capitalize the user's name for them if they didn't bother to do it on their own.
+2. When your script asks for the user's height, ask for first their feet and then their inches.
+3. Prevent your script from crashing if you don't get a number from the user for their height.
+4. Accept decimal values for their height.
+
+Include an additional file in your 2018-09-14_First_Python directory (before zipping it) called mastery.txt, explaining which of these options you chose to implement.
