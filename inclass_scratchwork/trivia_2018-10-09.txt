@@ -1,0 +1,9 @@
+# Warmup: Write a program that asks a trivia question (e.g. "What's the capital of Vermont?") and asks the user for the answer. If they get it right, congratulate them. If not... well, tell them it was a good try?
+
+# Step Two: Use a while loop to keep asking them to try again until they get it right.
+
+# Step Three: Give them a limited number of chances to get it right before telling them the answer.
+
+# "Is x not equal to 5"
+x != 5
+not x == 5
