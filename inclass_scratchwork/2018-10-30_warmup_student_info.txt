@@ -1,0 +1,5 @@
+Write a program that asks the user if they want to know your name, graduation year, or favorite food, then tells the user the requested piece of information.
+
+If you finish with that, add an extra behavior for when they ask for something invalid, like your shoe size.
+
+If you finish that, add more options for them to ask about, like your pet's name, your favorite class, and your deepest fear.
