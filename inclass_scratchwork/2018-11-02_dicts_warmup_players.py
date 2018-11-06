@@ -68,4 +68,4 @@ players = {
 
 # Write a function that asks for a race, class, level, and name from the user; puts all those values in a dictionary; then returns that dictionary.
 
-# Write a function that takes 
+players[real_name] = character_info
