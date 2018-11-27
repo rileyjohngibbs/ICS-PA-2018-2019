@@ -82,6 +82,6 @@ mikey = Michaelangelo()
 donny = Donatello()
 raf = Raphael()
 
-for x in range(30):
+for count in range(30):  # Quick way of executing the contents of the for-loop 30 times
     for ninja in turtles():  # Loops through all of the Turtles on screen
         ninja.travel()  # Calls the travel method, which should be different for each Turtle subclass
