@@ -1,0 +1,17 @@
+Similarities
+------------
+- return statements in functions
+- Syntax-oriented; very specific
+- for loops
+- Lists with square brackets
+
+
+Differences
+-----------
+- Write function instead of def
+- Use const to define a variable
+- Variable names have subsequent words capitalized; camelCasing versus snake_casing
+- console.log instead of print
+- Semicolon at the end of every line
+- Instead of double-quotes, uses single-quotes
+- Lists are called arrays
