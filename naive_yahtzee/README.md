@@ -2,7 +2,7 @@
 
 ## Installation
 
-Download all the files in this directory with "yahtzee" in their name into a single folder on your machine. You can do this easily on a Mac running Chrome by holding option while clicking each file's name in the list.
+Download all the files in this directory with "yahtzee" in their name into a single folder on your machine. You can follow the instructions in the [root directory](https://github.com/rileyjohngibbs/ICS-PA-2018-2019)'s README.
 
 ## Running the App
 
