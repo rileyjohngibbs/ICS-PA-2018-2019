@@ -1,13 +1,13 @@
 class Die {
   constructor() {
     this.locked = false;
-    this.value = 0;
+    this.face = 0;
     this.roll();
   }
 
   roll() {
     if (!this.locked) {
-      this.value = Math.ceil(Math.random() * 6);
+      this.face = Math.ceil(Math.random() * 6);
     }
     return this;
   }
@@ -18,7 +18,7 @@ class Die {
   }
 
   updateDom() {
-    this.domDie.innerText = this.value;
+    this.domDie.innerText = this.face;
     this.domDie.classList.value = 'die ' + (this.locked ? 'locked' : 'unlocked');
     return this;
   }
