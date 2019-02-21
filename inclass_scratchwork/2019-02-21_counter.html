@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+    <body>
+        <p id="counter">
+            0
+        </p>
+        <button onclick="increment()">
+            Count
+        </button>
+        <script type="text/javascript">
+            let count = 0;
+            
+            function increment() {
+                count++;
+                const counterP = document.getElementById('counter');
+                counterP.innerHTML = count;
+            }
+        </script>
+    </body>
+</html>
