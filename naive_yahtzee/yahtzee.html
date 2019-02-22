@@ -6,6 +6,7 @@
   </head>
   <body>
     <h1>Yahtzee!</h1>
+    <h2>Score: <span id="score">0</span></h2>
     <div id="dicepool">
       <button class="die">
         0
@@ -22,7 +23,13 @@
       <button class="die">
         0
       </button>
-      <button id="roll-btn" onclick="rollDice()">Roll Dice</button>
+      <button id="roll-btn" onclick="rollDice()">Roll Dice (<span id="counter"></span>/3)</button>
+      <button id="reset-btn" onclick="reset()">New Turn</button>
+    </div>
+    <div>
+      <button id="three-kind-btn" onclick="scoreThreeKind()" class="score-btn">Three of a Kind</button>
+      <button id="four-kind-btn" onclick="scoreFourKind()" class="score-btn">Four of a Kind</button>
+      <button id="yahtzee-btn" onclick="scoreYahtzee()" class="score-btn">Yahtzee!</button>
     </div>
     <script type="text/javascript" src="./yahtzee.js"></script>
   </body>

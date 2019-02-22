@@ -1,3 +1,7 @@
+div {
+  padding: 5px 0;
+}
+
 button {
   height: 50px;
   width: 50px;
@@ -5,7 +9,11 @@ button {
 }
 
 #roll-btn {
-  width: 150px;
+  width: 8em;
+}
+
+#reset-btn {
+  width: 8em;
 }
 
 .die.unlocked {
@@ -14,4 +22,8 @@ button {
 
 .die.locked {
   background-color: red;
+}
+
+.score-btn {
+  width: 8em;
 }
