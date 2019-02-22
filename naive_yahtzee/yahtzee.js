@@ -65,9 +65,9 @@ function reset() {
 }
 
 function checkScoring(arr) {
-  document.getElementById('three-kind-btn').disabled = !hasSet(arr, 3);
-  document.getElementById('four-kind-btn').disabled = !hasSet(arr, 4);
-  document.getElementById('yahtzee-btn').disabled = !hasSet(arr, 5);
+  document.getElementById('three-kind-btn').disabled = !hasSet(arr, 3) || hasScoredThreeKind;
+  document.getElementById('four-kind-btn').disabled = !hasSet(arr, 4) || hasScoredFourKind;
+  document.getElementById('yahtzee-btn').disabled = !hasSet(arr, 5) || hasScoredYahtzee;
 }
 
 function hasSet(arr, num) {
@@ -86,6 +86,7 @@ function hasSet(arr, num) {
 function scoreThreeKind() {
   const sum = modelDice.reduce((a, b) => a + b.face, 0);
   score += sum;
+  hasScoredThreeKind = true;
   document.getElementById('score').innerHTML = score;
   reset();
 }
@@ -93,15 +94,21 @@ function scoreThreeKind() {
 function scoreFourKind() {
   const sum = modelDice.reduce((a, b) => a + b.face, 0);
   score += sum + 10;
+  hasScoredFourKind = true;
   document.getElementById('score').innerHTML = score;
   reset();
 }
 
 function scoreYahtzee() {
   score += 50;
+  hasScoredYahtzee = true;
   document.getElementById('score').innerHTML = score;
   reset();
 }
+
+let hasScoredThreeKind = false;
+let hasScoredFourKind = false;
+let hasScoredYahtzee = false;
 
 // Initial roll
 rollDice();

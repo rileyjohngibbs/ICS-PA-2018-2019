@@ -2,34 +2,52 @@
 <html>
   <head>
     <title>Yahtzee!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./yahtzee.css">
   </head>
   <body>
-    <h1>Yahtzee!</h1>
-    <h2>Score: <span id="score">0</span></h2>
-    <div id="dicepool">
-      <button class="die">
-        0
-      </button>
-      <button class="die">
-        0
-      </button>
-      <button class="die">
-        0
-      </button>
-      <button class="die">
-        0
-      </button>
-      <button class="die">
-        0
-      </button>
-      <button id="roll-btn" onclick="rollDice()">Roll Dice (<span id="counter"></span>/3)</button>
-      <button id="reset-btn" onclick="reset()">New Turn</button>
-    </div>
-    <div>
-      <button id="three-kind-btn" onclick="scoreThreeKind()" class="score-btn">Three of a Kind</button>
-      <button id="four-kind-btn" onclick="scoreFourKind()" class="score-btn">Four of a Kind</button>
-      <button id="yahtzee-btn" onclick="scoreYahtzee()" class="score-btn">Yahtzee!</button>
+    <div class="container">
+      <div class="row">
+        <h1 class="col-8">Yahtzee!</h1>
+        <h2 class="col-4" style="margin: auto">Score: <span id="score">0</span></h2>
+      </div>
+      <div class="row">
+        <div id="dicepool" class="col-4">
+          <button class="die">
+            0
+          </button>
+          <button class="die">
+            0
+          </button>
+          <button class="die">
+            0
+          </button>
+          <button class="die">
+            0
+          </button>
+          <button class="die">
+            0
+          </button>
+        </div>
+        <div class="col-4">
+          <button id="roll-btn" onclick="rollDice()">Roll Dice (<span id="counter"></span>/3)</button>
+        </div>
+        <div class="col-4">
+          <button id="reset-btn" onclick="reset()">New Turn</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <button id="three-kind-btn" onclick="scoreThreeKind()" class="score-btn">Three of a Kind</button>
+        </div>
+        <div class="col-4">
+          <button id="four-kind-btn" onclick="scoreFourKind()" class="score-btn">Four of a Kind</button>
+        </div>
+        <div class="col-4">
+          <button id="yahtzee-btn" onclick="scoreYahtzee()" class="score-btn">Yahtzee!</button>
+        </div>
+      </div>
     </div>
     <script type="text/javascript" src="./yahtzee.js"></script>
   </body>
