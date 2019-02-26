@@ -28,17 +28,3 @@ For example:
 cd ~/Desktop
 git clone https://github.com/rileyjohngibbs/ICS-PA-2018-2019.git
 ```
-
-## First Python Assignment
-
-Download `first_python.zip` (click it in the file browser above, and then click "download" on the next page) and decompress the file. You should be able to decompress it by double-clicking the file in your finder. If you're feeling fancy, open a shell, change directory into the `.zip` file's directory, and run this command:
-
-```
-$ unzip first_python.zip
-```
-
-Open the `instructions.txt` file inside the decompressed folder to get the instructions for the rest of the assignment.
-
-### First Python Assignment Due Date
-
-Friday, September 14, 2018
