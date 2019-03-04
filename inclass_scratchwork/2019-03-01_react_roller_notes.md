@@ -2,7 +2,7 @@
 
 ## Retrieving react-roller
 
-Available on Github. Click [here](https://github.com/rileyjohngibbs/react-roller).
+Available on Github. Click [here](https://github.com/rileyjohngibbs/react-roller/tree/initial) for the initial version.
 
 ### Running react-roller
 
