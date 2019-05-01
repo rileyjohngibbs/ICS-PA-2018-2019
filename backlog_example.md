@@ -1,0 +1,35 @@
+# Backlog
+
+- [ ] A student should be able to view events happening in each week so they can anticipate what's coming up.
+  - Estimate: 3
+  - Requirements:
+    - Needs to have the start and stop times of each event.
+    - Events need to be displayed chronologically.
+    - Student needs to be able to add to the list.
+  - Subtasks:
+    - Build an event display React component.
+    - Build a weekly display React component.
+    - Create long term storage of event information (e.g. SQL, local file storage, cookies).
+- [ ] A student user should be able to send questions about an assignment to a teacher so that they can better understand what they need to accomplish.
+  - Estimate: 1
+  - Requirements:
+    - Needs to have teacher contact information stored, entered by student user.
+    - Does not need to communicated directly through application; can open template email in user's email client.
+  - Subtasks:
+    - Build contact list React component.
+    - Build contact React component.
+    - Create long term storage of contact information (e.g. SQL, local file storage, cookies).
+- [ ] A student should be able to request a meeting time with a teacher so that they can get extra help with their coursework.
+  - Estimate: 2
+- [ ] A student should be able to track extracurricular and outside-of-school activities so that they can get a complete picture of their schedule.
+  - Estimate: 2
+- [ ] A student should be able to organize images in the application by class so that they can easily find pictures of notes and other images from class.
+  - Estimate: 1
+- [ ] A student should be able to load assignments into the app from the Crossroads website so that they can make sure all of their assignments are correctly tracked.
+  - Estimate: 4
+- [ ] A student should be able to track and categorize assignments by size so that they can prioritize their long term workload.
+  - Estimate: 2
+- [ ] A student should be able to see suggestions for how much time to spend on an assignment per day so that they can keep on track with their long term projects.
+  - Estimate: 2
+- [ ] A student should be able to follow a VR meditation in the application so that they can relax and improve their productivity.
+  - Estimate: 5
