@@ -1,4 +1,4 @@
-class Nimbers(object):
+class DoublingNim(object):
 
     def __init__(self, first_player, second_player):
         self.first = first_player

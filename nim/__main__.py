@@ -1,7 +1,7 @@
-from nimbers.nimbers import Nimbers
-from nimbers.human import Human
-from nimbers.randomplayer import RandomPlayer
-from nimbers.aiplayer import ArtificialIntelligence
+from nim.doublingnim import DoublingNim
+from nim.human import Human
+from nim.randomplayer import RandomPlayer
+from nim.aiplayer import ArtificialIntelligence
 
 
 if __name__ == "__main__":
@@ -12,11 +12,11 @@ if __name__ == "__main__":
         try:
             ai = ArtificialIntelligence()
             ai.make_move(5, 3)
-            game = Nimbers(Human(input("Name? ")), ai)
+            game = DoublingNim(Human(input("Name? ")), ai)
         except NotImplementedError:
-            game = Nimbers(Human(input("Name? ")), RandomPlayer())
+            game = DoublingNim(Human(input("Name? ")), RandomPlayer())
     else:
-        game = Nimbers(
+        game = DoublingNim(
             Human(input("Name of first player? ")),
             Human(input("Name of second player? "))
         )
