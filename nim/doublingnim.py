@@ -1,3 +1,7 @@
+import nim.human
+
+
+
 class DoublingNim(object):
 
     def __init__(self, first_player, second_player):
@@ -23,7 +27,11 @@ class DoublingNim(object):
         while valid_move is False:
             taken = self.active_player.make_move(self.nimbers, self.max_take)
             if taken > self.max_take or taken < 1:
-                print(f"Illegal move. You may not take more than {self.max_take} nimbers, and you must take at least 1 nimber.")
+                message = f"Illegal move: {taken} nimbers. You may not take more than {self.max_take} nimbers, and you must take at least 1 nimber."
+                if type(self.active_player) is nim.human.Human:
+                    print(message)
+                else:
+                    raise ValueError(message)
             else:
                 valid_move = True
         self.nimbers -= taken
